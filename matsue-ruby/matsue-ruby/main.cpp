@@ -5,7 +5,7 @@ using namespace std;
 
 
 struct Node {
-	char c[10];
+	char c[11];
 	unsigned long eval;
 
 	Node(){
@@ -32,7 +32,7 @@ struct Node {
 
 unsigned short offset = 'a';
 int N,L;
-char in[10];
+char in[11];
 vector<Node> v, _v, __v;
 vector<Node>::iterator v_i;
 vector<Node>::const_iterator v_ie;
@@ -60,6 +60,8 @@ bool revChk(const char* s,const char* _s){
 
 int main(void){
 	cin >> N;
+
+	memset(in, 0, sizeof(in));
 
 	for (int i = 0; i < N; i++){
 		cin >> in;
