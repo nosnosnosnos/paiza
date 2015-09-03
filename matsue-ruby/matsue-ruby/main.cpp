@@ -6,7 +6,7 @@ using namespace std;
 
 struct Node {
 	char c[11];
-	unsigned long eval;
+	unsigned long long eval;
 
 	Node(){
 		memset(c, 0, sizeof(c));
@@ -37,9 +37,9 @@ vector<Node> v, _v, __v;
 vector<Node>::iterator v_i;
 vector<Node>::const_iterator v_ie;
 
-unsigned long eval(const char* s){
+unsigned long long eval(const char* s){
 	unsigned int d = 0;
-	unsigned long ret = 0;
+	unsigned long long ret = 0;
 
 	for (int i = L - 1; i >= 0; i--){
 		ret += (s[i] - offset) << d;
@@ -146,13 +146,13 @@ int main(void){
 		}
 
 {
-	L = size;
-	if (!revChk(ans, ans)){
-		while (true)
-		{
-			int aa = 0;
-		}
-	}
+	//L = size;
+	//if (!revChk(ans, ans)){
+		//while ( N > 900)
+		//{
+		//	int aa = 0;
+		//}
+	//}
 }
 
 	cout << ans << endl;
