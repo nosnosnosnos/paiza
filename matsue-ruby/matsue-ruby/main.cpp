@@ -143,7 +143,15 @@ int main(void){
 			ans[index + i] = __v.begin()->c[i];
 		}
 
-	int ss = strlen(ans);
+{
+	L = size;
+	if (!revChk(ans, ans)){
+		while (true)
+		{
+			int aa = 0;
+		}
+	}
+}
 
 	cout << ans << endl;
 
