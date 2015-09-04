@@ -115,6 +115,7 @@ int main(void){
 
 		_v.erase(_v.begin());
 	}
+	_v.clear();
 
 	v_i = __v.begin();
 	v_ie = __v.end();
